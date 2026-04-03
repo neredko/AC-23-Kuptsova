@@ -9,5 +9,5 @@ elif vvod in[6,7,8]:
     print("Лето")
 elif vvod in[9,10,11]:
     print("Осень")
-elif vvod < 0 or vvod > 12:
+else:
     print("Ошибка: Введите число от 1 до 12")
