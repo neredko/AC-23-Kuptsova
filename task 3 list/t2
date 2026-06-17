@@ -1,0 +1,10 @@
+#task 2. Удаление дубликатов с сохранением порядка
+
+lst =[1,2,2,3,2,4,1]
+unique_lst = []
+
+for i in range(len(lst)):
+    if lst[i] not in unique_lst: 
+        unique_lst.append(lst[i])
+
+print(unique_lst)#[1,2,3,4]

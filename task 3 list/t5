@@ -1,0 +1,18 @@
+#task 5. Пересечение множеств через списки
+
+lst1 = [1,2,3,2,4]
+lst2 = [2,2,3,5]
+
+Qlst1 = []
+common = []
+
+for i in lst1:
+    if i not in Qlst1:
+        Qlst1.append(i)
+
+for i in Qlst1:
+    cnt1 = lst1.count(i)
+    cnt2 = lst2.count(i)
+    common += [i] * min(cnt1, cnt2)
+
+print(common)  # [2, 2, 3]
